@@ -10,7 +10,7 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #17A2B8;
+    background: rgb(192, 225, 242);
 }
 ::selection{
     color: #fff;
@@ -32,10 +32,21 @@ body{
     padding: 13px 20px 0;
     border-radius: 10px;
     border: 1px solid #bfbfbf;
+    
+}
+.starter{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #cb3439;
+    font-size: 23px;
 }
 .content-box .typing-text{
     overflow: hidden;
-    max-height: 256px;
+    max-height: 500px;
+    direction: rtl;
 }
 .typing-text::-webkit-scrollbar{
     width: 0;
@@ -179,4 +190,13 @@ li:not(:first-child) span{
 .content button{
     margin-top: 10px;
 }
+}
+
+.wpm img{
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto 0 auto;
+    padding: 0;
+    width: 700px;
+    height: 150px;
 }
