@@ -1,4 +1,3 @@
-// Array Of Words
 const words = [
   "Hello",
   "Programming",
@@ -32,16 +31,16 @@ const words = [
   "Playing"
 ];
 
-// Setting Levels
+
 const lvls = {
   "Normal": 4
 };
 
-// Default Level
-let defaultLevelName = "Normal"; // Change Level From Here
+
+let defaultLevelName = "Normal";
 let defaultLevelSeconds = lvls[defaultLevelName];
 
-// Catch Selectors
+
 let startButton = document.querySelector(".start");
 let lvlNameSpan = document.querySelector(".message .lvl");
 let secondsSpan = document.querySelector(".message .seconds");
