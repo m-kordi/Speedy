@@ -200,3 +200,8 @@ li:not(:first-child) span{
     width: 700px;
     height: 150px;
 }
+@media (max-width: 768px) {
+    .wpm img {
+        visibility: hidden;
+    }
+}
