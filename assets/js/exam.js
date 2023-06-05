@@ -34,9 +34,11 @@ timeLeft = maxTime,
 charIndex = mistakes = isTyping = 0;
 
 function loadParagraph() {
+    
     const ranIndex = Math.floor(Math.random() * paragraphs.length);
     typingText.innerHTML = "";
     paragraphs[ranIndex].split("").forEach(char => {
+        //تقسيم النص الى سبانات
         let span = `<span>${char}</span>`
         typingText.innerHTML += span;
     });
@@ -46,6 +48,7 @@ function loadParagraph() {
 }
 
 function initTyping() {
+    
     let characters = typingText.querySelectorAll("span");
     let typedChar = inpField.value.split("")[charIndex];
     if(charIndex < characters.length - 1 && timeLeft > 0) {
