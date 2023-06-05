@@ -38,7 +38,6 @@ function loadParagraph() {
     const ranIndex = Math.floor(Math.random() * paragraphs.length);
     typingText.innerHTML = "";
     paragraphs[ranIndex].split("").forEach(char => {
-        //تقسيم النص الى سبانات
         let span = `<span>${char}</span>`
         typingText.innerHTML += span;
     });
